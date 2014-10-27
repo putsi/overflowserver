@@ -2,11 +2,10 @@ overflowserver
 ==============
 
 Example of stack overflow vulnerable server and exploit which can be used to gain unauthorized access to machine running this server.
-Tested with Windows XP & 7.
+Tested with Windows XP and Windows 7.
+Server uses winsock2 for networking. DEP and ASLR must be disabled for included exploit to work.
 
-Uses Winsock2 for networking.
-
-Requires gcc-compiler and python-interpreter.
+Included batch-files require gcc-compiler and included exploit requires python-interpreter.
 
 For instructions, see comments in source-files.
 
