@@ -2,8 +2,12 @@ overflowserver
 ==============
 
 Example of stack overflow vulnerable server and exploit which can be used to gain unauthorized access to machine running this server.
-Tested with Windows XP and Windows 7.
-Server uses winsock2 for networking. DEP and ASLR must be disabled for included exploit to work.
+
+Server simulates a multi-user chat server and asks user for a username and after that user can send chat-messages to server.
+Server can be exploited using EIP-based stack buffer overflow attack in chat-message.
+Server uses winsock2 for networking and should work atleast with Windows XP and Windows 7. 
+
+For included exploit to work, DEP&ASLR must be disabled and few variables inside exploit-script must be modified.
 
 Included batch-files require gcc-compiler and included exploit requires python-interpreter.
 
